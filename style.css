@@ -1,0 +1,140 @@
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.Structure-Layout {
+    place-items: center;
+    display: grid;
+    min-height:80vh
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 350px;
+    min-width: 500px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 12px;
+}
+.Result-layout {
+    background-image: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));    border-radius: 25px;
+    display:flex;
+    place-items:center;
+    flex-direction:column;
+}
+.Summary-layout {
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+   
+}
+.Result-layout h4 {
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+}
+.Result-layout h3 {
+    color: hsl(0, 0%, 100%);
+}
+.Result-layout p {
+    color: hsl(223, 9%, 69%);
+    text-align: center;
+    font-size: 13px;
+
+}
+
+   
+    .Result-layout .Circle {
+        text-align: center;
+        border-radius: 50%;
+        background-image: linear-gradient(hsla(256, 72%, 46%, 1) , hsla(241, 72%, 46%, 0));    
+        color: #fff;
+        width: 120px;
+        height: 120px;
+        display: flex;
+        place-items: center;
+        flex-direction: column;
+        justify-content:center;
+    }
+    .Result-layout .Circle span:nth-child(1) {
+        font-size:30px;
+        font-weight:700;
+    }
+
+    .Colored-Boxes .box {
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        width:80%;
+    }
+.Colored-Boxes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+    .Colored-Boxes .box div:nth-child(1){
+        display:flex;
+        gap:8px;
+    }
+    .Colored-Boxes .box {
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .Summary-layout button {
+        background-color: hsl( 224, 30%, 27%);
+        color:#fff;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 25px;
+        border: none;
+        padding: 12px 80px;
+        margin-block-start: 20px;
+    }
+    .Summary-layout button:hover {
+        background-image: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        }
+    .Summary-layout h4 {
+align-self: baseline;
+margin-inline-start: 30px; 
+color: hsl(224, 30%, 27%);
+   }
+
+ 
+.Colored-Boxes .box:nth-child(1) {
+    background-color: hsl(0deg 100% 94.52% / 51%);
+    color: hsl(0, 100%, 67%) ;
+
+} 
+
+.Colored-Boxes .box:nth-child(2) {
+    background-color: hsl(39deg 100% 90.72% / 51%);
+    color:hsl(39, 100%, 56%);
+} 
+.Colored-Boxes .box:nth-child(3) {
+    background-color:hsl(166deg 74.65% 95.03% / 51%);
+    color:hsl(166, 100%, 37%);
+} 
+.Colored-Boxes .box:nth-child(4) {
+    background-color:hsl(234deg 100% 92.45% / 51%);
+    color:hsl(234, 85%, 45%);
+} 
+
+
+/******************Responsive********************/
+
+@media screen and (min-width:320px) and (max-width:769px)
+{
+    .wrapper {
+        display:block;
+        min-width: 200px;
+        
+    }
+    .Summary-layout button {
+        padding: 8px 40px;
+        margin-block-start: 10px;
+    }   
+    .Summary-layout {
+        padding-block-end: 10px;
+    }
+}
